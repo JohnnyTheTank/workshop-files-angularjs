@@ -1,4 +1,4 @@
-**Workshop Files: AngularJS Basics**
+**AngularJS Workshop Files**
 
 # Overview
     1.      Project components
