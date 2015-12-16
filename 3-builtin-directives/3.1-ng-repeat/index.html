@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title -->
-    <title>1.2. Modules</title>
+    <title>3.1. ng-repeat</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
@@ -27,23 +27,28 @@
 <body ng-app="app">
 <div class="container">
 
-    <h1>1. Project components</h1>
+    <h1>3. Built in directives</h1>
 
-    <h2>1.2. Modules</h2>
+    <h2>3.1. ng-repeat</h2>
+
+    <h3><a href="http://teropa.info/images/angular_expressions_cheatsheet.pdf" target="_blank">{{'Expressions'+' Cheatsheet'}}</a></h3>
 
     <br>
 
     <h3>Events</h3>
     <section class="row" ng-controller="eventsController">
         <article class="col-md-12">
-            <div class="row" ng-repeat="event in events" ng-cloak>
-                <div class="col-sm-3">
+            <div class="row" ng-repeat="event in events | orderBy:'location' " ng-cloak>
+                <div class="col-sm-2">
+                    Number {{$index+1}}
+                </div>
+                <div class="col-sm-2">
                     {{event.date | date:'dd.MM.yyyy'}}
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     {{event.city}}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     {{event.location}}
                 </div>
                 <div class="col-sm-2">
@@ -58,21 +63,34 @@
 
     <h3>News</h3>
     <section ng-controller="newsController">
-        <div ng-repeat="item in news" ng-cloak>
-            <div class="text-muted">
-                {{item.date | date:'dd.MM.yyyy'}}
+        <div ng-repeat="item in news" ng-cloak class="row" ng-class-even="'alert alert-info'" ng-class-odd="'alert alert-warning'">
+            <div class="col-md-4">
+                <div class="text-muted">
+                    {{item.date | date:'dd.MM.yyyy'}}
+                </div>
+                <div>
+                    <strong>{{item.title}}</strong>
+                </div>
+                <div>
+                    {{item.body}}
+                </div>
+
             </div>
-            <div>
-                <strong>{{item.title}}</strong>
+            <div class="col-md-4">
+                <div>$index = {{$index}}</div>
+                <div>$first = {{$first}}</div>
+                <div>$middle = {{$middle}}</div>
             </div>
-            <div>
-                {{item.body}}
+            <div class="col-md-4">
+                <div>$last = {{$last}}</div>
+                <div>$even = {{$even}}</div>
+                <div>$odd = {{$odd}}</div>
             </div>
-            <br>
         </div>
 
         </article>
     </section>
+
 
 </div>
 

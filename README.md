@@ -10,7 +10,8 @@
     2.2     [x] One way binding
     2.3     [x] Expressions / Filter
 
-    3.      [ ] Built in directives
+    3.      [.] Built in directives
+    3.1     [x] ng-repeat
 
     4.      [ ] Services & dependency injection
 
