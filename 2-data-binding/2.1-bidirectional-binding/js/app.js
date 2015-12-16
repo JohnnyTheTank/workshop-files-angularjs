@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('app', [])
+angular.module('app', ['events'])
     .run(function ($rootScope) {
         $rootScope.name = "Jonathan";
     });
