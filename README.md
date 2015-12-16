@@ -8,6 +8,7 @@
     2.      [x] Data dinding
     2.1     [x] Bidirectional binding
     2.2     [x] One way binding
+    2.3     [x] Expressions / Filter
 
     3.      [ ] Built in directives
 
