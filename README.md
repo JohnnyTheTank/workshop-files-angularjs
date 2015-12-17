@@ -12,6 +12,8 @@
 
     3.      [.] Built in directives
     3.1     [x] ng-repeat
+    3.2     [x] Event based directives
+    3.3     [x] Logical directives
 
     4.      [ ] Services & dependency injection
 
