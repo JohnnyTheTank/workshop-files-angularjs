@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title -->
-    <title>3.3 Logical directives</title>
+    <title>4.1 Services</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
@@ -19,38 +19,39 @@
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/sampleModule.js"></script>
+    <script type="text/javascript" src="js/translateModule.js"></script>
 
 </head>
 
 <body ng-app="app">
 <div class="container">
 
-    <h1>3. Built in directives</h1>
-    <h2>3.3 Logical directives</h2>
+    <h1>4. Dependenciy Injection</h1>
+    <h2>4.1 Services</h2>
 
     <br>
-    <div>
+    <div ng-controller="sampleController">
+
+        <button class="btn btn-primary" ng-click="setOriginal($event)">T_MOUSE</button>
+        <button class="btn btn-primary" ng-click="setOriginal($event)">T_BACKPACK</button>
+        <button class="btn btn-danger" ng-click="setOriginal($event)">T_BLA</button>
+        <hr>
 
         <div class="well">
-            ng-if: <input type="text" ng-model="name" placeholder="name"> <span ng-if="name">{{name}}</span>
+            Original: <strong>{{original}}</strong>
         </div>
 
         <div class="well">
-            ng-show: <input type="text" ng-model="name" placeholder="name"> <span ng-show="name">{{name}}</span> (less "safe", but faster)
+            Translated: <strong>{{translated}}</strong>
         </div>
 
-        <div class="well">
-            ng-hide: <span ng-hide="name">"name" is not set</span>
-        </div>
+        <hr>
 
-        <div class="well">
-            ng-switch
-            <div ng-switch on="name">
-                <div ng-switch-when="Jonathan">Nice Egghead!</div>
-                <div ng-switch-when="Miriam">Sweet!</div>
-                <div ng-switch-default>type "Jonathan" or "Miriam"</div>
-            </div>
-        </div>
+        <button class="btn btn-primary" ng-click="translateOriginal(original, 'de')">German</button>
+        <button class="btn btn-primary" ng-click="translateOriginal(original, 'en')">English</button>
+        <button class="btn btn-primary" ng-click="translateOriginal(original, 'fr')">French</button>
+        <button class="btn btn-danger" ng-click="translateOriginal(original, 'ja')">Japan</button>
     </div>
 
     <br>

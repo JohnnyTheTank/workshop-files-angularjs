@@ -1,3 +1,3 @@
 "use strict";
 
-angular.module('app', ['sample']);
+angular.module('app', []);

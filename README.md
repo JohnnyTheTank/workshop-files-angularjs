@@ -15,7 +15,10 @@
     3.2     [x] Event based directives
     3.3     [x] Logical directives
 
-    4.      [ ] Services & dependency injection
+    4.      [ ] Dependency injection
+    4.1.    [ ] Services
+    4.2     [ ] Factories
+    4.3     [ ] Provider
 
     5.      [ ] Sanitize module
 
