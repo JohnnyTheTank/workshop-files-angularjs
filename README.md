@@ -18,7 +18,7 @@
 
     4.      [.] Dependency injection
     4.1.    [x] Services
-    4.2     [ ] Factories
+    4.2     [.] Factories
     4.3     [ ] Provider
 
     5.      [.] Sanitize module
