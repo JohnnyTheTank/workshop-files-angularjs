@@ -14,13 +14,17 @@
     3.1     [x] ng-repeat
     3.2     [x] Event based directives
     3.3     [x] Logical directives
+    3.4     [ ] Value directives
 
-    4.      [ ] Dependency injection
-    4.1.    [ ] Services
+    4.      [.] Dependency injection
+    4.1.    [x] Services
     4.2     [ ] Factories
     4.3     [ ] Provider
 
-    5.      [ ] Sanitize module
+    5.      [.] Sanitize module
+    5.1     [x] ng-bind-html
+    5.2     [.] $sce.trustAsHtml()
+    5.3     [x] $sce.trustAsResourceUrl()
 
     6.      [ ] WebStorm live templates
 
