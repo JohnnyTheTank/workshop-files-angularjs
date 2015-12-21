@@ -14,7 +14,7 @@
     3.1     [x] ng-repeat
     3.2     [x] Event based directives
     3.3     [x] Logical directives
-    3.4     [ ] Value directives
+    3.4     [.] Value directives
 
     4.      [.] Dependency injection
     4.1.    [x] Services
@@ -29,6 +29,3 @@
     6.      [ ] WebStorm live templates
 
     7.      [ ] Custom directives
-    
-    
-    last update 17.12
