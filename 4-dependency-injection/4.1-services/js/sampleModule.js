@@ -13,7 +13,7 @@ angular.module('sample', ['translate'])
 
 
         $scope.translateOriginal = function (string, language ) {
-            if(string) {
+            if(string && language)  {
                 $scope.translated = translateService.translate(string, language);
             }
         };
