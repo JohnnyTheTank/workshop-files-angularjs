@@ -29,3 +29,8 @@
     6.      [ ] WebStorm live templates
 
     7.      [ ] Custom directives
+
+
+Run it
+- `$ npm install`
+- `$ bower install`
