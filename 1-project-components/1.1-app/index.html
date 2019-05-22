@@ -13,6 +13,7 @@
 
     <!-- Script Files -->
     <script src="../../node_modules/angular/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/i18n/angular-locale_de-de.js"></script>
 </head>
 
 <body ng-app>
@@ -23,7 +24,10 @@
     <hr>
 
     <input type="text" ng-model="name" placeholder="Whats your name?">
-    <p>My name is: {{name}}</p>
+    <p ng-if="name">My name is: {{name | uppercase}}</p>
+
+    <input type="number" ng-model="price" placeholder="Whats your price?">
+    <p ng-if="price">My age is: {{price | currency}}</p>
 
 
 </div>

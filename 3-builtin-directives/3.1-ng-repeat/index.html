@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap-block-grid/dist/bootstrap3-block-grid.min.css">
 
     <!-- Script Files -->
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/angular/angular.min.js"></script>
-    <script src="../../node_modules/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/eventsModule.js"></script>
@@ -36,7 +33,7 @@
     <h3>Events</h3>
     <section class="row" ng-controller="eventsController">
         <article class="col-md-12">
-            <div class="row" ng-repeat="event in events | orderBy:'location' " ng-cloak>
+            <div class="row" ng-repeat="event in events | orderBy:'city' " ng-cloak>
                 <div class="col-sm-2">
                     Number {{$index+1}}
                 </div>
