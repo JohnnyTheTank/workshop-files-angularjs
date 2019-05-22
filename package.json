@@ -1,0 +1,27 @@
+{
+  "name": "workshop-files-angularjs",
+  "version": "1.0.0",
+  "description": "**AngularJS Workshop Files**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-flickr-api-factory": "^0.5.1",
+    "angular-sanitize": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "bootstrap-block-grid": "~1.1.2",
+    "jquery": "~2.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnnyTheTank/workshop-files-angularjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnnyTheTank/workshop-files-angularjs/issues"
+  },
+  "homepage": "https://github.com/JohnnyTheTank/workshop-files-angularjs#readme"
+}

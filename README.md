@@ -26,10 +26,6 @@
     5.2     [.] $sce.trustAsHtml()
     5.3     [x] $sce.trustAsResourceUrl()
 
-    6.      [ ] WebStorm live templates
-
-    7.      [ ] Custom directives
-
 
 Run it
 - `$ npm install`
