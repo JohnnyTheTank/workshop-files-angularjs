@@ -33,4 +33,3 @@
 
 Run it
 - `$ npm install`
-- `$ bower install`
